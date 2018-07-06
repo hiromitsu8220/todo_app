@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  form(method='POST')
+      each todo in todo_list
+        label
+          input(id=todo.item type='checkbox' name='cbox' value=todo.item)
+          | !{todo.item}
+        br
+
+      else
+        h2 There are no item.
