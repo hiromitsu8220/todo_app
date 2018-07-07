@@ -12,7 +12,7 @@ const todolistSchema = new Schema({
 
 todolistSchema.static('findByItem', function (item, callback) {
   return this.find({ item: item }, callback);
-});
+ });
 
 //Export model
 module.exports = mongoose.model('ToDoList', todolistSchema);
