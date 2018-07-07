@@ -1,8 +1,8 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-var create_todo_controller = require('../controllers/createtodoController');
+const create_todo_controller = require('../controllers/createtodoController');
 
-router.get('/create', create_todo_controller.create_todo_get);
+router.get('/create_todo', create_todo_controller.create_todo_get);
 
 module.exports = router;

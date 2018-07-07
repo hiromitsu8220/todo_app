@@ -2,6 +2,7 @@ extends layout
 
 block content
   h1= title
+  a(href='/create/create_todo') Create New Todo
   form(method='POST')
       each todo in todo_list
         label

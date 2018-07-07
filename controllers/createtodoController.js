@@ -1,7 +1,7 @@
 const ToDoList = require('../models/todolist');
 
 exports.create_todo_get = function (req, res) {
-  res.render('create', { title: 'Create todo' });
+  res.render('create_todo', { title: 'Create todo' });
 };
 
 exports.create_todo_post = function (req, res) {
