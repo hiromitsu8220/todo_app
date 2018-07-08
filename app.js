@@ -13,7 +13,7 @@ const app = express();
 
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/mydb', { useNewUrlParser: true });
+mongoose.connect('mongodb://heroku_xrpq6hts:v6o59aae755btr5iavv6ufdjhd@ds131551.mlab.com:31551/heroku_xrpq6hts/mydb', { useNewUrlParser: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
