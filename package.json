@@ -15,5 +15,9 @@
     "mongodb": "^3.1.1",
     "mongoose": "^5.2.1",
     "morgan": "~1.9.0"
+  },
+  "engines": {
+    "node": "10.6.X",
+    "npm": "6.1.X"
   }
 }
