@@ -8,7 +8,8 @@ block content
         label
           input(id=todo.item type='checkbox' name='cbox' value=todo.item)
           | !{todo.item}
+          | !{todo.content}
+          button.btn.btn-default(type='submit') done
         br
-
       else
         h2 There are no item.

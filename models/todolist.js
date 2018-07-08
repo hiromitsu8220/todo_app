@@ -1,8 +1,8 @@
-const mongoose = require('mongoose');
+var mongoose = require('mongoose');
 
-const Schema = mongoose.Schema;
+var Schema = mongoose.Schema;
 
-const todolistSchema = new Schema({
+var todolistSchema = new Schema({
   item: { type: String, required: true, max: 100 },
   content: { type: String },
   add_date: { type: Date },

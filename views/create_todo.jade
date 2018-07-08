@@ -5,10 +5,10 @@ block content
 
   form(method='POST')
     div.form-group
-      label(for='name') Name:
-      input(type='text', placeholder='Write Todo' name='name' value='todo')
+      label(for='item') item:
+      input(type='text', placeholder='Write Todo' name='item' value='')
       label(for='content') Content:
-      input(type='text', placeholder='Write Todo' name='content' value='todo')
+      input(type='text', placeholder='Write Todo' name='content' value='')
     button.btn.btn-default(type='submit') 登録
 
   if errors
