@@ -1,1 +1,1 @@
-web: npm startg
+web: node ./bin/www
