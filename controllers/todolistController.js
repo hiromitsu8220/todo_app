@@ -5,7 +5,7 @@ exports.todolist = function (req, res) {
   ToDoList.find({})
     .exec(function (err, todos) {
       if (err) { return next(err); }
-      res.render('index', { title: 'To Do lists!!!', todo_list: todos });
+      res.render('index', { title: 'To Do List!', todo_list: todos });
     });
 };
 
