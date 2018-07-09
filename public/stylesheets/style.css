@@ -1,25 +1,110 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image:url("../image/58389c679501bd91619c029ba29b721d_s.jpg") ;
 }
-
+.create_button {
+  text-align: center;
+}
 a {
-  border: solid 2px #999999;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.32);
   background: #fff;
   border-radius: 5px;
-  color: #00B7FF;
+  color: black;
   font-weight: bold;
-  margin: 10px;
-  padding: 5px;
+  margin: 3px;
+  padding: 10px;
   text-decoration: none;
+  opacity: 0.9;
+  font-size: 20px;
 }
 h1 {
+  font-size:50px;
   text-align: center;
+  margin: 20px;
 }
 
 .form_box {
-  margin: 10px;
+  padding: 0px;
+  margin:  3px auto;
+  width: 550px;
+  min-height: 120px ;
+  background: #fff;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.32);
+  color: black;
+  opacity: 0.9;
+  position: relative;
+  border-radius: 5px;
+  
 }
 .result {
   text-align: center;
+}
+.main_box {
+
+  width:555px;
+  margin: 15px auto;
+}
+
+.task_name {
+  font-size: 30px;
+  padding-left: 20px; 
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+.task_content {
+  font-size: 27px;
+
+}
+form.todo_form {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+button.todo_button {
+  font-size: 15px;
+  border-radius: 5px;
+  background: #fdfdfd;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.32);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.create_box {
+  font-size: 30px;
+  padding: 0px;
+  margin:  3px auto;
+  width: 550px;
+  min-height: 120px ;
+  color: black;
+  background: rgba(255,255,255,0.3);
+  border-radius: 5px;
+}
+.create_item {
+  font-size: 28px;
+  background: #fdfdfd;
+}
+
+.create_content {
+  font-size: 28px;
+  width: 530px;
+  height: 300px;
+  background: #fdfdfd;
+}
+hr {
+  opacity: 0.5;
+}
+.post_button {
+  margin-top: 10px;
+  font-size: 25px;
+  border-radius: 5px;
+  background: #fdfdfd;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.32);
+  background: rgba(255,255,255,0.3);
+}
+.item {
+  
 }

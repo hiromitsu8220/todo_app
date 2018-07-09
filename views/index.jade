@@ -2,17 +2,19 @@ extends layout
 
 block content
   h1= title
-  
-  a(href='/create/create_todo') Create New Task
-  div.form_box
-    form(method='POST')
-        each todo in todo_list
-          label
-            input(id=todo.item type='checkbox' name='cbox' value=todo.item)
-            | !{todo.item}
-            | !{todo.content}
-            button.btn.btn-default(type='submit') done
-          br
-        else
-          h2 There are no item.
+  .create_button
+    a(href='/create/create_todo') Create New Task
+  div.main_box  
+    each todo in todo_list
+      div.form_box
+        .task_name
+          !{todo.item}
+        .task_content
+          !{todo.content}
+        form(class="form_todo",method='POST')
+          input(id=todo.item type='checkbox' name='cbox' value=todo.item)  
+          button.btn.btn-default(class="button_todo",type='submit') done
+        
+    else
+      h2 There are no item.
 

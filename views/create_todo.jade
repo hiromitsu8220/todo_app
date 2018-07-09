@@ -3,15 +3,20 @@ extends layout
 block content
   h1.title #{title}
 
-  form(method='POST')
-    div.form-group
-      label(for='item') item:
-      input(type='text', placeholder='Write Todo' name='item' value='')
-      label(for='content') Content:
-      input(type='text', placeholder='Write Content' name='content' value='')
-    button.btn.btn-default(type='submit') 登録
+  div.main_box  
+    form(method='POST')
+      div.create_box
+        label(for='item',class="item") item:
+        br
+        input(class="create_item", type='text', name='item' value='')
+        br
+        hr
+        label(for='content',class="content") Content:
+        br
+        textarea(name="content", cols="50", rows="30")
+      button(class="post_button",type='submit') Create
 
-  if errors
-    ul
-      for error in errors
-        li!= error.msg
+    if errors
+      ul
+        for error in errors
+          li!= error.msg
